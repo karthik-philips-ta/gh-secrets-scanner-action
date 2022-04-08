@@ -12,7 +12,7 @@ echo "Cloning git-secrets code from github"
 git clone https://github.com/awslabs/git-secrets.git
 
 echo "Installing git-secrets"
-cd git-secrets && make install && cd ..
+cd git-secrets && make install && cd $GITHUB_WORKSPACE
 
 echo "Running git-secrets"
-git secrets --register-aws --global && git secrets --scan -r .
+git secrets --scan -r .
