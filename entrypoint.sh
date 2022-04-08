@@ -18,4 +18,4 @@ echo "Adding pattern to catch"
 git secrets --add 'password\s*=\s*.+'
 
 echo "Running git-secrets"
-git secrets --scan -r .
+git secrets --scan
