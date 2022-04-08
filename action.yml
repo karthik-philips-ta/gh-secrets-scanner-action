@@ -1,0 +1,9 @@
+# action.yml
+name: 'Secrets Scanner'
+description: 'Scan repo for secrets using awslabs/git-secrets'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: lock
+  color: red
