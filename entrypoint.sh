@@ -14,5 +14,8 @@ git clone https://github.com/awslabs/git-secrets.git
 echo "Installing git-secrets"
 cd git-secrets && make install
 
+echo "Adding pattern to catch"
+git secrets --add 'password\s*=\s*.+'
+
 echo "Running git-secrets"
 git secrets --scan
