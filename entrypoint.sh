@@ -17,5 +17,8 @@ cd git-secrets && make install
 echo "Adding pattern to catch"
 git secrets --add 'password\s*=\s*.+'
 
+echo "PWD $(pwd)"
+echo "ls $(ls -al)"
+
 echo "Running git-secrets"
 git secrets --scan
