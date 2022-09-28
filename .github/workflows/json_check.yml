@@ -18,10 +18,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - id: action_with_json_output
-        run: 'echo ::set-output name=data::{"errorType":"Error","errorMessage":"Failed Lambda Function","trace":["Error: Failed Lambda Function","    at Runtime.exports.handler (/var/task/index.js:3:15)","    at Runtime.handleOnce (file:///var/runtime/index.mjs:548:29)"]}'
+        run: 'echo ::set-output name=data::{\"errorType\":\"Error\",\"errorMessage\":\"Failed Lambda Function\",\"trace\":[\"Error: Failed Lambda Function\",\"    at Runtime.exports.handler \(/var/task/index.js:3:15\)\",\"    at Runtime.handleOnce \(file:///var/runtime/index.mjs:548:29\)\"]}'
       - id: data
         uses: gr2m/get-json-paths-action@v1.x
         with:
           json: ${{ steps.action_with_json_output.outputs.data }}
-          bar: "foo.bar"
+          bar: "errorType"
       - run: "echo bar is ${{ steps.data.outputs.bar }}"
