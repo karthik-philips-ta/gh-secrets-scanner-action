@@ -30,12 +30,12 @@ _secret_exists=$?
 
 if [ ${_secret_exists} == 0 ]; then
     # Secrets exist. Echo error and exit with code 1
-    echo "Secrets exist in your commits. Please rectify the bad commits and re-commit."
+    echo -e '\033[1mSecrets exist in your commits. Please rectify the bad commits and re-commit.\033[0m'
     cat secret_logs.txt
     rm -rf secret_logs.txt
     exit 1
 else
     # Secrets don't exist. Exit with code 0
-    echo "No secrets exist in your commits."
+    echo -e '\033[1mNo secrets exist in your commits.\033[0m'
     exit 0
 fi 
