@@ -21,4 +21,19 @@ echo "PWD $(pwd)"
 echo "ls $(ls -al)"
 
 echo "Running git-secrets"
-git secrets --scan
+#git secrets --scan
+git secrets --scan-history 2> secret_logs.txt
+cat secret_logs.txt | grep -q "[ERROR]";
+_secret_exists=$?
+
+if [ ${_secret_exists} == 0 ]; then
+    # Secrets exist. Echo error and exit with code 1
+    echo "Secrets exist in your commits. Please rectify the bad commits and re-commit."
+    cat secret_logs.txt
+    rm -rf secret_logs.txt
+    exit 1
+else
+    # Secrets don't exist. Exit with code 0
+    echo "No secrets exist in your commits."
+    exit 0
+fi 
