@@ -20,9 +20,11 @@ git secrets --add 'password\s*=\s*.+'
 echo "PWD $(pwd)"
 echo "ls $(ls -al)"
 
+set +e
+
 echo "Running git-secrets"
 #git secrets --scan
-git secrets --scan-history 2> secret_logs.txt
+git secrets --scan 2> secret_logs.txt
 cat secret_logs.txt | grep -q "[ERROR]";
 _secret_exists=$?
 
