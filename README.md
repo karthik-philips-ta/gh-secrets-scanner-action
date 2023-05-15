@@ -6,5 +6,5 @@ This action scans git repos using awslabs/git-secrets.
 ```
 steps:
       - uses: actions/checkout@v2
-      - uses: kams-mash/gh-secrets-scanner-action@master
+      - uses: karthik-philips-ta/gh-secrets-scanner-action@master
 ```
