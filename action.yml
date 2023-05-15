@@ -1,6 +1,15 @@
 # action.yml
 name: 'Secrets Scanner'
 description: 'Scan repo for secrets using awslabs/git-secrets'
+inputs:
+  patternType:
+    description: type of the patternfile passed(allow\prohibit)
+    required: false
+    default: "prohibit"  
+  path:
+    description: Path to config files
+    required: false
+    default: "."
 runs:
   using: 'docker'
   image: 'Dockerfile'
