@@ -1,2 +1,147 @@
 password\s*=\s*.+
 ("|')?(SECRETKEY|SECRET_KEY|Secret\s*Key|SECRET\s*KEY)("|')?\s*(:|=>|=)\s*("|')?[A-Za-z0-9/\+_.$%*&()!@=]{3,}("|')?
+AKIAIOSFODNN7EXAMPLE
+wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+db:migrate
+(sys.argv|queueHooks|None|null|string|dummy|Dummy|getPassword|getpassword|testuser|someone|%s|Postman-Token|127.0.0.1|some.host|localhost|mime-db|+api_key|response.|username,|password,|=&|this.|Syslogparams.|+host+|ARGS.|args.|Args.|raw_input)
+DBUtil.createDBClientFactory()
+self.client.apiscan
+(\\$|file.readline)
+(new\\s*CredentialsToken|getBearerTokenFromRequest)
+(xxxxxx|111111)
+Bearer\\s*xxxxx
+(Mismatch|toString|getDatabase)
++username[?=password]
+(tdruserforallscope|usernameSmpOrg|userNamefromfile|.strip|expired|req.body.username|req.body.password|getStringFromCredentials|.split|getValue|context.expand)
+(Database\\s*user\\s*name|Database\\s*user\\s*password|Postgres\\s*user\\s*name|Postgres\\s*user\\s*password|Cloud\\s*Foundry\\s*Username|Cloud\\s*Foundry\\s*Password)
+iamPricipalObject.getUsername
+CF_USERNAME=$CF_USERNAME
+CF_USERNAME=$cfUserName
+CF_USERNAME=%ENG_CF_USR%
+ClientId = clientId
+ClientId = ClientId
+ClientId = values[0] + dateTime 
+ClientId: "client_id"
+ClientId: resp.clientId
+ClientSecret: "client_secret"
+ClientSecret: resp.clientSecret
+PG_PASS=$decpass
+process.env.CF_PASSWORD = 'testpassword'
+process.env.CF_USERNAME = 'testUser'
+rootpwd=$decpass
+SECRET_KEY = "secret"
+SECRET_KEY = "secretKey"
+SecretKey: "secret-key"
+00000000-0000-0000-0000-000000000000
+Test/
+"access_token": "9ae2f21e-f839-4c16-8c01-419bed5a0c9f"
+"accessToken=c9fc7dd6-1111-2222-3333-a9d1d1555f86&refreshToken=051dce52-4444-5555-6666-6db3234f5b7f"
+"account": "901256822684"
+"refresh_token": "2d647b2d-5fcc-4ddd-905f-2c270a1b4311"
+"secret_id": "4e4d0c1b-4662-6c85-5023-0460e34a59c4"
+"SecretKey": "AQICAHhFLlkFKQjXkCUT8daoIZeXJD5c6a5/qBD2q1756rkkHgG4MLhbRqtyvxnov5xFzc7wAAAAizCBiAYJKoZIhvcNAQcGoHsweQIBADB0BgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDOnbx9OslY+O8BWnSQIBEIBHzrTEvS3tg8ZgR2heXn3acQuju5MOl04CkR783+m3L/acv6wmBp9URgm4AinXs3EAnFTFQralu0/Z7W/yAJ8X1cCbw5T6D74="
+"access_token": "27830aea-43d0-4dca-972b-3bb5722d73be"
+add key="WaitTimeInMilliSecsForPipeToWriteMessage" value="0"
+add key="WaitTimeInMilliSecsForPipeToWriteMessage" value="500"
+set name="IBE_HSDP_DB_Password" value="{{ dbpassword }}" override="true" encrypt="true"
+31f4c322-1e17-3a2b-8665-067d205aca99
+808f7c1a-6eab-4720-a6b4-207f87d2f24e
+access_token: "1df47154-7f06-411e-a7a1-0184bf9bb215"
+access_token: "42b0b655-3c96-4756-9add-a69327633d1a"
+accessToken = "b618412b-55a1-4faf-b25c-79db82bbc624"
+accessToken = "cf0bafc5-7dfa-47aa-a1c4-640011c91b8c"
+accessToken = abccdc4d-da36-2560-97d5-12cefa9184fd
+AKIAIOSFCDPP7EXAMPLE
+API_KEY = BDPLiteConstants.S3_CREDENTIALS_API_KEY;
+Bearer 09dcdc4d-fa36-4560-97d5-52cefa9184fd
+Bearer 0e26bedd-14be-4e05-98d5-e6868349107c
+Bearer 13a22aac-f025-42bd-a655-34206f961fa4
+Bearer 153e0c42-9083-484f-94f7-c4eeb2ab0077
+Bearer 1a08122f-44b1-4475-90e3-3c48daa98c7e
+Bearer 44648485-1bda-400f-b4a4-75fddc0f493c
+Bearer 4e4dc5a7-ab63-4f83-b7aa-199bf12ee9b8
+Bearer 56d87576-f604-4766-97cc-1ac3ea2f0950
+Bearer 59b4aa8f-0190-46c1-84a6-33870d5598df
+Bearer 62abc13d-9578-4ae3-8530-dc0b094f498b
+Bearer 7b381b28-6bad-42e1-bf9e-ba19536f11a8
+Bearer 80540ee6-db5e-4c6f-9ddc-ce02cb970538
+Bearer 80b0e2f8-ae97-437a-8a66-d47ab1a74f1c
+Bearer 8fcf3b39-a284-42f5-baf7-099063eeff4b
+Bearer 931914b0-91b0-4af4-ac83-926434bfd9cc
+Bearer 95e7195b-82b1-416c-b07d-5c16b23c3f69
+Bearer 980ed423-f793-44d5-b350-34a3271059c0
+Bearer 9ddd1a02-9a80-43aa-a763-1852a1ba5a75
+Bearer 9e8ccbff-c8c2-43a0-bcf3-7b14b7f10e3d
+Bearer abda1778-4bd9-417a-8375-99b432271f23
+Bearer b9ee7bd3-99ac-46e5-a94c-61b1a8a4c593
+Bearer d78809ed-18d5-458d-8b0f-27b0cfbe4b85
+Bearer e46345b2-bb5e-49b5-853f-275e30d7782a
+Bearer fb1c672f-6181-4c9b-bb45-51b689817d74
+CDP2.CSS.API_SIGNING.KEY=consent_1_0
+CDP2.CSS.API_SIGNING.SECRET=TopSecret_1_0
+CDP2.HDC.API_SIGNING.KEY=dataCore_0_35
+CDP2.HDC.API_SIGNING.SECRET=TopSecret_0_35
+CF_PASSWORD = CFEnvMapper.get_cf_properties
+CF_PASSWORD="Enter LDAP Password"
+CF_PASSWORD=$CF_PASSWORD
+CF_PASSWORD=$cfUserNamePassword
+CF_USER = "cfUser";
+CF_USERNAME = CFEnvMapper.get_cf_properties
+CF_USERNAME="Enter LDAP Username"
+CF_USERNAME=$CF_USERNAME
+CF_USERNAME=$cfUserName
+CICD/securitytest.bat:7:set CF_PASSWORD=%ENG_CF_PWD%
+const token = '3527e9b4-5d62-4136-9517-32b65a8e54a7';
+DWJT0QSVIRicfrZtnxXzOy5p09ddFeniu6SZ+/XQ
+e1b213ea-a0dc-56f7-86ad-cc058e1f2c4e
+export CF_PASSWORD=$CF_PASSWORD
+export CF_USERNAME=$CF_USERNAME
+f47650e1-8bdc-4eec-af99-2ee2c297688a
+G_PASS = "PGPASSWORD"
+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
+PG_PASS: U2FsdGVkX1/cXby9mo/+6pUeJ+XinHo2vPyL1xNvBxg=
+printf "\n\nAudit Prod Key: $audit_prod_key\nAudit Secret Key: $audit_secret_key\nAudit Shared Key: $audit_shared_key\nAudit Service URL: $audit_service_url\n\n"
+pwMCWOoV/SlmEBdgET4myw5hNfAWD8c2a8EO1JeB
+rootpwd: U2FsdGVkX19S9CbEHF4EaakHVTe+LSyq+w/5BEgfAY8=
+SecretKey = 't06FzaWVUF9Btrlpuircr3zPRv8n49ppGHukPxb6aH1=';
+Service/coaching-service/service/src/main/java/com/philips/datacore/cs/security/CertificateLoader.java:26
+Service/coaching-service/service/src/main/java/com/philips/datacore/cs/security/CertificateLoader.java:27           
+Service/coaching-service/service/src/test/java/com/philips/datacore/cs/security/CertificateLoaderTest.java:27        
+Service/coaching-service/service/src/test/java/com/philips/datacore/cs/security/CertificateLoaderTest.java:28
+Source/AM/AccessManagement/src/test/
+Source/AM/AMService/src/test/
+Source/ForgeRock/OpenAM/CustomPolicies/src/test/
+Source/IDM/IdentityManagement/src/test/
+Source/kibana/plugins/hsdp/node_modules/
+Source/SCIM/idm-v2/src/test/
+token: "a96cd32a255f4a36928b7a40f66211af",
+token: "aa87c35e-887a-411a-8329-76db5e4ed1b5"
+6a64ae56-cb51-4bdd-928a-3ebc854ef771
+zap = ZAPv2
+123456789012
+987654321098
+dummy_clientsecret_1111111111111111111111111111111111111111=
+dummy_clientsecret_2222222222222222222222222222222222222222=
+dummy_clientsecret_3333333333333333333333333333333333333333=
+dummy_clientsecret_4444444444444444444444444444444444444444=
+dummy_clientsecret_5555555555555555555555555555555555555555=
+dummyclientsecret111111=
+dummyclientsecret222222=
+dummyclientsecret333333=
+dummyclientsecret444444=
+dummy_password_1111111111111111111111111111111111111111=
+dummy_password_2222222222222222222222222222222222222222=
+dummy_password_3333333333333333333333333333333333333333=
+dummy_password_4444444444444444444444444444444444444444=
+dummy_password_5555555555555555555555555555555555555555=
+dummy_token_1111111111111111111111111111111111111111=
+dummy_token_2222222222222222222222222222222222222222=
+dummy_token_3333333333333333333333333333333333333333=
+dummy_token_4444444444444444444444444444444444444444=
+dummy_token_5555555555555555555555555555555555555555=
+aaaaaaaa-1111-2222-3333-444444444444
+bbbbbbbb-1111-2222-3333-444444444444
+cccccccc-1111-2222-3333-444444444444
+dddddddd-1111-2222-3333-444444444444
+eeeeeeee-1111-2222-3333-444444444444
