@@ -30,6 +30,8 @@ set +e
 
 echo "Running git-secrets"
 #git secrets --scan
+echo -e '\033[1;32mAll secrets allowed.\033[0m'
+git config --get-all secrets.allowed
 git secrets --scan 2> secret_logs.txt
 cat secret_logs.txt | grep -q "[ERROR]";
 _secret_exists=$?
