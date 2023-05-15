@@ -18,6 +18,8 @@ echo "Adding pattern to catch"
 #git secrets --add 'password\s*=\s*.+'
 patternType=$1
 if [ "${patternType}" == "prohibit" ];then
+        echo "adding prohibit pattern"
+	cat /patterns-prohibit.txt
 	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
 elif [ "${patternType}" == "allow" ];then
 	for allowedPattern in `cat /patterns-allow.txt`; do git secrets --add -a "${allowedPattern}"; done
