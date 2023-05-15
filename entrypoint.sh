@@ -34,9 +34,6 @@ git secrets --scan 2> secret_logs.txt
 cat secret_logs.txt | grep -q "[ERROR]";
 _secret_exists=$?
 
-echo -e '\033[1;32mAll secrets allowed.\033[0m'
-git config --get-all secrets.allowed
-
 if [ ${_secret_exists} == 0 ]; then
     # Secrets exist. Echo error and exit with code 1
     echo -e '\033[1;31mSecrets exist in your commits. Please rectify the bad commits and re-commit.\033[0m'
