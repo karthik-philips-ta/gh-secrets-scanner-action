@@ -35,6 +35,7 @@ set +e
 
 echo "Running git-secrets"
 #git secrets --scan
+git-secrets --list
 git secrets --scan 2> secret_logs.txt
 cat secret_logs.txt | grep -q "[ERROR]";
 _secret_exists=$?
