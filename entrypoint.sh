@@ -20,7 +20,12 @@ git secrets --add 'password\s*=\s*.+'
 if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
 	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
 elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
-	for pattern in `cat /patterns-allow.txt`; do git secrets --add --literal "$pattern"; done
+	#for pattern in `cat /patterns-allow.txt`; do git secrets --add --literal "$pattern"; done
+	patterns_file="/patterns-allow.txt"
+	while IFS= read -r pattern; do
+	      echo "$pattern"
+              git secrets --add --allowed "$pattern"
+        done < "$patterns_file"
 fi    
 
 echo "PWD $(pwd)"
