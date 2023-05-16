@@ -15,7 +15,8 @@ echo "Installing git-secrets"
 cd git-secrets && make install && cd $GITHUB_WORKSPACE
 
 echo "Adding pattern to catch"
-#git secrets --add 'password\s*=\s*.+'
+git secrets --add 'password\s*=\s*.+'
+git secrets --add "("|')?(SECRETKEY|SECRET_KEY|Secret\s*Key|SECRET\s*KEY)("|')?\s*(:|=>|=)\s*("|')?[A-Za-z0-9/\+_.$%*&()!@=]{3,}("|')?"
 
 if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
 	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
