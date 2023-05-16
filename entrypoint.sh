@@ -20,7 +20,7 @@ echo "Adding pattern to catch"
 if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
 	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
 elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
-	for pattern in `cat /patterns-allow.txt`; do git secrets --add --allowed "$pattern"; done
+	for pattern in `cat /patterns-allow.txt`; do git secrets --add --literal "$pattern"; done
 fi    
 
 echo "PWD $(pwd)"
