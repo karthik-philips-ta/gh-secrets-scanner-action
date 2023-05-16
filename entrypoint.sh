@@ -29,8 +29,8 @@ elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
         done < "$patterns_file"
 fi    
 
-# echo "PWD $(pwd)"
-# echo "ls $(ls -al)"
+echo "PWD $(pwd)"
+echo "ls $(ls -al)"
 
 echo "Running git-secrets"
 #git-secrets --list
