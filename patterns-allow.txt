@@ -88,7 +88,6 @@ CF_USERNAME = CFEnvMapper.get_cf_properties
 CF_USERNAME="Enter LDAP Username"
 CF_USERNAME=$CF_USERNAME
 CF_USERNAME=$cfUserName
-CICD/securitytest.bat:7:set CF_PASSWORD=%ENG_CF_PWD%
 const token = '3527e9b4-5d62-4136-9517-32b65a8e54a7';
 DWJT0QSVIRicfrZtnxXzOy5p09ddFeniu6SZ+/XQ
 e1b213ea-a0dc-56f7-86ad-cc058e1f2c4e
