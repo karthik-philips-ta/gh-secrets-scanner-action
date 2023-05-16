@@ -33,7 +33,7 @@ fi
 # echo "ls $(ls -al)"
 
 echo "Running git-secrets"
-git-secrets --list
+#git-secrets --list
 #git secrets --scan
 git secrets --scan 2> secret_logs.txt
 cat secret_logs.txt | grep -q "[ERROR]";
