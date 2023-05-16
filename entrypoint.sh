@@ -25,7 +25,8 @@ elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
 	patterns_file="/patterns-allow.txt"
 	while IFS= read -r pattern; do
 	      echo "$pattern"
-              git secrets --add --allowed "$pattern"
+              #git secrets --add --allowed "$pattern"
+	      git secrets --add --literal "$pattern"
         done < "$patterns_file"
 fi    
 
