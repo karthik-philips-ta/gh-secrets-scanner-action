@@ -31,14 +31,6 @@ fi
 echo "PWD $(pwd)"
 echo "ls $(ls -al)"
 
-patterns_file="/patterns-allow.txt"
-while IFS= read -r pattern; do
-	echo "$pattern"
-	git secrets --add --allowed "$pattern"
-done < "$patterns_file"
-
-set +e
-
 echo "Running git-secrets"
 #git secrets --scan
 git-secrets --list
