@@ -18,7 +18,9 @@ echo "Adding pattern to catch"
 git secrets --add 'password\s*=\s*.+'
 
 echo "Adding pattern to allow"
-for allowedPattern in `cat /.gitallowed`; do git secrets --add -a "${allowedPattern}"; done
+for i in $(git show $newrev:.gitallowed 2>/dev/null); do
+  git secrets --add --allowed $i;
+done
 git-secrets --list
 set +e
 
