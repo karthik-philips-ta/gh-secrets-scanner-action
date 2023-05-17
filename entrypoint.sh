@@ -21,9 +21,11 @@ if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
 fi
 
 echo "Adding pattern to allow"
-for i in $(git show $newrev:.gitallowed 2>/dev/null); do
-  git secrets --add --allowed $i;
-done
+for allowpattern in `cat /patterns-allow.txt`; do git secrets --add --allowed "$allowpattern"; done
+
+# for i in $(git show $newrev:.gitallowed 2>/dev/null); do
+#   git secrets --add --allowed $i;
+# done
 git-secrets --list
 set +e
 
