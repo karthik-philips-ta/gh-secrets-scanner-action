@@ -1,4 +1,2 @@
-id\s*=\s*("[^"]*"|'[^']*')
 "SECRET_KEY":"([^"]+)"
-token\s*=\s*("[^"]*"|'[^']*')
-environmentRunEntity._id\s*=\s*("[^"]*"|'[^']*')
+
