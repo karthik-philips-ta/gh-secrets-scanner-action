@@ -19,7 +19,7 @@ git secrets --add 'password\s*=\s*.+'
 
 # echo "PWD $(pwd)"
 # echo "ls $(ls -al)"
-git config --get-all secrets.allowed
+git-secrets --list
 set +e
 
 echo "Running git-secrets"
