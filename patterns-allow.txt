@@ -1,2 +1,1 @@
 "SECRET_KEY":"([^"]+)"
-/var token = \(repoUrl\.ToLower\(\)\.Contains\("tfsapac05"\)/gm
