@@ -1,2 +1,1 @@
 password\s*=\s*Base64Encode\(_funtionalAccPWD\)
-
