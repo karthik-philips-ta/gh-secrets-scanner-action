@@ -17,9 +17,9 @@ cd git-secrets && make install && cd $GITHUB_WORKSPACE
 echo "Adding pattern to catch"
 git secrets --add 'password\s*=\s*.+'
 
-echo "PWD $(pwd)"
-echo "ls $(ls -al)"
-
+# echo "PWD $(pwd)"
+# echo "ls $(ls -al)"
+git config --get-all secrets.allowed
 set +e
 
 echo "Running git-secrets"
