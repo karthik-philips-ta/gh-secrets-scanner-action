@@ -22,12 +22,11 @@ if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
 elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
 	#for pattern in `cat /patterns-allow.txt`; do git secrets --add --literal "$pattern"; done
 	patterns_file="/patterns-allow.txt"
-	git-secrets --add-provider -- cat /patterns-allow.txt
-# 	while IFS= read -r pattern; do
-# 	      echo "$pattern"
-#               git secrets --add --allowed "$pattern"
-# 	      #git secrets --add --literal "$pattern"
-#         done < "$patterns_file"
+	while IFS= read -r pattern; do
+	      echo "$pattern"
+              git secrets --add --allowed "$pattern"
+	      #git secrets --add --literal "$pattern"
+        done < "$patterns_file"
 fi    
 
 echo "PWD $(pwd)"
@@ -35,7 +34,7 @@ echo "ls $(ls -al)"
 
 echo "Running git-secrets"
 git-secrets --list
-git secrets --scan
+#git secrets --scan
 git secrets --scan 2> secret_logs.txt
 cat secret_logs.txt | grep -q "[ERROR]";
 _secret_exists=$?
