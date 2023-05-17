@@ -1,2 +1,1 @@
-password = _funtionalAccPWD
-password = Base64Encode(cred.Split(':')[1])
+id\s*=\s*("[^"]*"|'[^']*')
