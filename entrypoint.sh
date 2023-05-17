@@ -15,7 +15,8 @@ echo "Installing git-secrets"
 cd git-secrets && make install && cd $GITHUB_WORKSPACE
 
 echo "Adding pattern to catch"
-git secrets --add 'password\s*=\s*.+'
+#git secrets --add 'password\s*=\s*.+'
+for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
 
 echo "Adding pattern to allow"
 for i in $(git show $newrev:.gitallowed 2>/dev/null); do
