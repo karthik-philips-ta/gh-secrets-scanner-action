@@ -17,17 +17,17 @@ cd git-secrets && make install && cd $GITHUB_WORKSPACE
 echo "Adding pattern to catch"
 #git secrets --add 'password\s*=\s*.+'
 
-if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
-	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
-elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
-	#for pattern in `cat /patterns-allow.txt`; do git secrets --add --literal "$pattern"; done
-	patterns_file="/patterns-allow.txt"
-	while IFS= read -r pattern; do
-	      echo "$pattern"
-              git secrets --add --allowed "$pattern"
-	      #git secrets --add --literal "$pattern"
-        done < "$patterns_file"
-fi    
+# if [ "${INPUT_PATTERNTYPE}" == "prohibit" ];then
+# 	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
+# elif [ "${INPUT_PATTERNTYPE}" == "allow" ];then
+# 	#for pattern in `cat /patterns-allow.txt`; do git secrets --add --literal "$pattern"; done
+# 	patterns_file="/patterns-allow.txt"
+# 	while IFS= read -r pattern; do
+# 	      echo "$pattern"
+#               git secrets --add --allowed "$pattern"
+# 	      #git secrets --add --literal "$pattern"
+#         done < "$patterns_file"
+# fi    
 
 # echo "PWD $(pwd)"
 # echo "ls $(ls -al)"
@@ -36,10 +36,13 @@ fi
 if [ "${INPUT_PATTERNTYPE}" == "allow" ];then
 	for pattern in `cat /patterns-prohibit.txt`; do git secrets --add --global "$pattern"; done
 fi	
-	
+for i in $(git show $newrev:.gitallowed 2>/dev/null); do
+  git secrets --add --allowed $i;
+done	
 echo "Running git-secrets"
 git-secrets --list
 git secrets --scan
+echo -e '\033[1;32mNo secrets exist in your commits.\033[0m'
 # git secrets --scan 2> secret_logs.txt
 # cat secret_logs.txt | grep -q "[ERROR]";
 # _secret_exists=$?
